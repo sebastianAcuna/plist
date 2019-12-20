@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">plist</string>
+
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Se necesita acceso a la cámara para la detección</string>
+    <string name="no_camera_permission">Se necesitan los permisos para la cámara,  la aplicacion se saldrá.</string>
+    <string name="low_storage_error">Dependencias de el lector facial no se pudieron descargar debido a la poca memoria local</string>
+    <string name="barcode_failure">No se capturó ningun codigo</string>
+    <string name="barcode_error">"Error leyendo codigo: %1$s"</string>
+    <string name="search">Buscar</string>
+    <string name="volver">Volver</string>
+    <string name="seleccione_entrada_o_salida">SELECCIONE ENTRADA O SALIDA</string>
+    <string name="last_ingre">Ultimo Ingreso</string>
+    <string name="sacar_foto">Sacar foto</string>
+    <string name="ingrese_un_rut">Ingrese un RUT</string>
+    <string name="foto_trabajador">Foto Trabajador</string>
+</resources>

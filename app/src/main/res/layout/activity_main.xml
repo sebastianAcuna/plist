@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16sp">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container_primero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutTextOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Toque el boton para registrar codigo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/imbtnOne"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:background="@color/colorPrimary"
+            android:tint="@android:color/white"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_segundo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/container_primero"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutTextTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Toque el boton para registrar codigo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/imbtnTwo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:background="@color/colorAccent"
+            android:tint="@android:color/white"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTextTres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_segundo"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="escriba el nombre " />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@id/layoutTextTres"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>
