@@ -8,10 +8,8 @@
     tools:context=".MainActivity"
     android:padding="16sp">
 
-
-
-
     <LinearLayout
+
         android:id="@+id/container_primero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,15 +20,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
             >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtOne"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Toque el boton para registrar codigo" />
+                android:enabled="false"
+                android:hint="Cod. P.Aduana Presione Boton" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -39,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="0.2"
-            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:src="@drawable/ic_center_focus_strong_black_24dp"
             android:background="@color/colorPrimary"
             android:tint="@android:color/white"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
@@ -48,6 +45,7 @@
     </LinearLayout>
 
     <LinearLayout
+
         android:id="@+id/container_segundo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +65,8 @@
                 android:id="@+id/txtDos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Toque el boton para registrar codigo" />
+                android:enabled="false"
+                android:hint="Cod. Cont. Presione Boton" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,7 +75,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="0.2"
-            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:src="@drawable/ic_center_focus_strong_black_24dp"
             android:background="@color/colorAccent"
             android:tint="@android:color/white"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
@@ -91,6 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/container_segundo"
         android:layout_marginTop="20dp"
+        android:visibility="gone"
 
         >
 
@@ -102,16 +102,45 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
+    <TextView
+        android:id="@+id/title_foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sacar Foto : "
+        android:layout_below="@id/container_segundo"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/imbtnTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:background="@color/colorPrimaryDark"
+        android:tint="@android:color/white"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_below="@id/title_foto"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imbtnTres"
+        android:layout_centerHorizontal="true"
+        />
+
+
     <Button
         android:id="@+id/btn_guardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar"
-        android:layout_below="@id/layoutTextTres"
+        android:layout_below="@id/imgPreview"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        />
-
+        android:text="Siguiente" />
 
 
 </RelativeLayout>
